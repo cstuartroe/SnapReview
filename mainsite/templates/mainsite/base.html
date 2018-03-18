@@ -1,0 +1,40 @@
+{% load static %}
+<html>
+	<head>
+
+		<title>SnapReview</title>
+		<link rel="stylesheet" href="{% static 'css/custom.css' %}">
+		<link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
+		<link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
+		<meta charset="utf-8">
+
+	</head>
+
+	<body>
+
+		<header id = "navbar">
+			<div class = "pagelinks" style="float:left;">
+				<a href = "/"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+				<a href="/about"><i class="fa fa-question-circle" aria-hidden="true"></i>About</a>
+				<a href = "/contact"><i class="fa fa-quote-left" aria-hidden="true"></i>Contact</a>
+				<!-- <a href = "/record"><i class="fa fa-camera" aria-hidden="true"></i>Record a Review</a> -->
+			</div>
+		</header>
+
+		<div id = "mainframe">
+			{% block content %}
+			{% endblock %}
+		</div>
+
+		<hr/>
+
+		<div id = "footer">
+			<p style="text-align: center;">All content &copy; Kristian Gaylord and Conor Stuart Roe, 2018</p>
+		</div>
+
+		<!-- <div class="talen">
+			<p><a href = "/nl">nl</a></p>
+		</div> -->
+
+	</body>
+</html>
