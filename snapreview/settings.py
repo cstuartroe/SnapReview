@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'a4)ju%9tw&ap!u49eee8f-1mfwgb9lhnrv(j$+gwf$(i@6sh**'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','snapreview.herokuapp.com','snapreview.kristiangaylord.com','snapreview.conorstuartroe.com']
+ALLOWED_HOSTS = ['127.0.0.1','snapreview.herokuapp.com','snapreview.kristiangaylord.com','snapreview.conorstuartroe.com','198.199.74.12']
 
 
 # Application definition
