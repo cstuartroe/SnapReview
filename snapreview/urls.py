@@ -22,10 +22,6 @@ from shopify_install import views as shopify_install_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('record/', include('record.urls')),
-    path('install.php', shopify_install_views.install, name='install'),
-    path('generate_token.php', shopify_install_views.generate_token, name='generate_token'),
-    path('functions.php', shopify_install_views.functions, name='functions'),
-    path('api_call_write_products.php', shopify_install_views.api_call_write_products, name='api_call_write_products'),
     path('',include('mainsite.urls'))
 ]
 
