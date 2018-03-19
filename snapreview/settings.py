@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'record.apps.RecordConfig',
     'mainsite.apps.MainsiteConfig',
-    'shopify_install.apps.ShopifyInstallConfig'
 ]
 
 MIDDLEWARE = [

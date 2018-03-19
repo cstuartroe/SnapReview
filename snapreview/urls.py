@@ -17,7 +17,6 @@ from django.contrib import admin
 from django.urls import include, path
 from django.conf.urls import handler404, handler500
 from mainsite import views as mainsite_views
-from shopify_install import views as shopify_install_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
