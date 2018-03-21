@@ -25,11 +25,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1','snapreview.herokuapp.com','snapreview.kristiangaylord.com','snapreview.conorstuartroe.com','198.199.74.12']
 
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-
 # Application definition
 
 INSTALLED_APPS = [
