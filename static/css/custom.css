@@ -1,18 +1,7 @@
-/*Color Scheme:
-background #633939
-plain text #404438
-links and header #6E9548
-highlight #9B768D
-other #B8D29F
-other2 #834B80
-placeholderB8D29F
-*/
-
-
 @font-face {
-    font-family: "Gentium";
-    src: url("/static/font/GentiumPlus-R.ttf") format('truetype'),
-    	url("/static/font/GentiumPlus-R.svg") format('svg');
+    font-family: "Munich";
+    src: url("/static/font/Munich.woff") format('woff'),
+    	url("/static/font/Munich.ttf") format('truetype');
     font-weight: normal;
 }
 
@@ -24,12 +13,12 @@ placeholderB8D29F
 }
 
 body {
-	background-color: #633939;
+	background-color: #FFFFFF;
 }
 
 h1{
-	text-align: left;
-	font-family: "Gentium";
+	text-align: center;
+	font-family: "Munich";
 	color: #6E9548;
 	padding: 0em 3em;
 	font-weight: normal;
@@ -39,29 +28,22 @@ h1{
 	font-variant: small-caps;
 }
 
-h1.chinese{
-	font-size: 2em;
-}
-
 h2{
-	text-align: left;
-	font-family: "Gentium";
-	color: #6E9548;
+	text-align: center;
+	font-family: "Munich";
+	color: #FFFFFF;
 	padding: 0;
-	font-size: 2em;
+	font-size: 9em;
 	font-weight: 900;
-	margin: .5em;
+	/*margin: .5em;*/
 }
 
-h2.chinese{
-	font-size: 1.5em;
-}
 
 h3{
 
 	text-align: center; 
-	font-family: "Gentium";
-	color: #56EF78;
+	font-family: "Munich";
+	color: #FFFFFF;
 	padding: 0;
 	font-size: 2em; 
 	font-weight: 900;
@@ -70,17 +52,13 @@ h3{
 
 p {
 	text-align: center;
-	font-family: "Gentium";
+	font-family: "Munich";
 	font-weight: 600;
-	color: #303438;
 	padding: 0;
 	line-height: 1.5;
 	font-size: 1.5em;
 	margin: 1em;
-}
-
-p.chinese{
-	font-size: 1.2em;
+	color: #FFFFFF;
 }
 
 .fa{
@@ -96,7 +74,7 @@ hr{
 	background-position: center;
     border: 0;
     text-align: center;
-    color: #E1E6D4;
+    color: #FFFFFF;
 }
 
 hr:after {
@@ -106,8 +84,8 @@ hr:after {
 	animation: fa-spin 5s infinite linear;
 	display: inline-block;
 	position: relative;
-	padding: 10px 10px;
-	background: #E1E6D4;
+	padding: 5px 10px;
+	background: #FFFFFF;
 	border-radius: 50%;
 	color: #303438;
 	top: -1em;
@@ -115,12 +93,12 @@ hr:after {
 
 p a{
 	font-weight: 600;
-	color: #9B768D;
+	color: #FFFFFF;
 }
 
 b{
 	font-weight: 900;
-	color: #6E9548;
+	color: #FFFFFF;
 }
 
 table{
@@ -135,9 +113,8 @@ table{
 #navbar {
 	position: fixed;
 	width: 100%;
-	top: 0;
-	left: 0;
-	background-color: #6E9548;
+	top: 0px;
+	background-color: #000000;
 	z-index: 1;
 }
 
@@ -148,17 +125,17 @@ table{
 .pagelinks a{
 	float: left;
 	display: block;
-	font-family: "Gentium";
+	font-family: "Munich";
 	font-size: 1.5em;
-	color: #E1E6D4;
+	color: #FFFFFF;
 	font-weight: 600;
 	text-decoration:none;
 	padding: .25em .5em;
 }
 
 .pagelinks a:hover{
-	color: #9B768D;
-	background-color: #E1E6D4;
+	color: #000000;
+	background-color: #FFFFFF;
 }
 
 #name {
@@ -170,20 +147,12 @@ table{
 #name a{
 	float: left;
 	display: block;
-	font-family: "Gentium";
+	font-family: "Munich";
 	font-size: 1.5em;
 	color: #E1E6D4;
 	padding: .25em 1em;
 }
 
-#mainframe {
-	margin: 4em auto;
-	padding: 1em 0em;
-	max-width: 60em;
-	background-color: #E1E6D4;
-	border-radius: 2em;
-	text-align: center;
-}
 
 #mainframex {
 	padding: 3em;
@@ -206,3 +175,71 @@ table{
 	position: fixed;
 	bottom: 0px;
 }
+
+.mainframe {
+
+	padding:10em;
+    background-image: url("/static/img/video.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.overlay:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+}
+
+.mainframe * {
+	position: relative; 
+}
+
+
+#footer{
+	background-color: #000000;
+	color: #FFFFFF;
+	padding: 1px;
+}
+
+.button {
+  font-family: "Munich";
+  font-size: 1.5em;
+  font-weight: 1000;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 20px 50px 20px 50px;
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+.button:hover{
+	background-color: #FFFFFF;
+  	color: #000000;
+}
+
+.centerthatshit{
+	margin: auto;
+	text-align: center;
+    width: 50%;
+    padding: 10px;
+}
+
+#emailhref{
+	color:#FFFFFF;
+}
+
+.recordframe{
+	margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+

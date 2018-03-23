@@ -1,9 +1,9 @@
 {% extends 'mainsite/base.html' %}
 
 {% block content %}
-<video autoplay></video>
 
 <p>lol hope you like looking at your own ugly-ass mug.</p>
+<video autoplay  width="900px" height="550px" class = "recordframe"></video>
 
 <script>
 function hasGetUserMedia() {
@@ -24,6 +24,7 @@ const video = document.querySelector('video');
 
 function handleSuccess(stream) {
   video.srcObject = stream;
+  
 }
 
 function handleError(error) {
@@ -32,5 +33,7 @@ function handleError(error) {
 
 navigator.mediaDevices.getUserMedia(constraints).
   then(handleSuccess).catch(handleError);
+  
 </script>
+
 {% endblock %}
